@@ -1,4 +1,4 @@
-# 📊 Benchmarking Class vs Element Selectors in JavaScript (WIP)
+# 📊 Benchmarking Class vs Element Selectors in JavaScript
 
 This repository contains a simple yet effective benchmarking tool to compare the performance of class selectors versus element selectors in JavaScript. The benchmark involves creating a specified number of HTML elements (default: 10,000) and measuring the time it takes to apply styles using both types of selectors.
 
