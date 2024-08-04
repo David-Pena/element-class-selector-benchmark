@@ -1,15 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benchmark Test</title>
-    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container"></div>
-    <script src="benchmark.js"></script>
+<div class="container mt-5 p-5">
+    <h1 class="text-center">Benchmark: Class vs Element Selectors</h1>
+    <p class="text-center">
+        <a href="https://github.com/David-Pena/element-class-selector-benchmark" target="_blank">View Repository</a>
+    </p>
+    <section class="text-center mb-4">
+        <form class="form-group">
+            <label>Size:</label>
+            <input type="number" id="element-count" class="form-control d-inline-block" style="width: 250px;" placeholder="Enter number of elements (default: 10,000)" value="10000" min="1" max="100000">
+        </form>
+        <section class="mt-3">
+            <button id="clear-benchmark" class="btn btn-warning">Clear Benchmark</button>
+            <button id="run-benchmark" class="btn btn-primary">Run Benchmark</button>
+        </section>
+    </section>
+    <div id="results" class="text-center p-5"></div>
+    <div id="container" class="d-none"></div>
+</div>
+<script src="benchmark.js"></script>
 </body>
 </html>
